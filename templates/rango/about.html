@@ -1,0 +1,23 @@
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+   Rango
+{% endblock %}
+
+{% block body_block %}
+   <h1>Rango says here is the about Page</h1>
+
+   <button class="btn btn-primary"
+      onClick="alert('You clicked the button using Javascripy.');">
+      Click Me - I run JavaScript
+   </button>
+
+   <button class="btn btn-primary" id="about-btn">
+      Click Me - I'm JavaScript on Speed</button>
+   <p>This is an example</p>
+   <p>This is another example</p>
+   <p>This text is for JQuery Example</p>
+   <div id="msg">Hello -I'm here for JQuery Example too</div>
+   <p>visits: {{ visits }}</p>
+{% endblock %}
